@@ -1,216 +1,318 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.12.8 on win32)" generated="2025-02-03T14:13:51.193706" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2 (Python 3.12.8 on win32)" generated="2025-02-12T14:43:32.745928" rpa="false" schemaversion="5">
 <suite id="s1" name="Robot Suite" source="C:\Users\muale\Documents\Lailaolab\test\test-website-\robot_suite.robot">
 <test id="s1-t1" name="User Can't Login Successfully name" line="7">
 <kw name="Open Browser And Navigate" owner="keywords" type="SETUP">
 <kw name="Set Selenium Timeout" owner="SeleniumLibrary">
 <arg>${TIMEOUT}</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2025-02-03T14:13:51.514570" elapsed="0.000000"/>
+<status status="PASS" start="2025-02-12T14:43:33.176904" elapsed="0.001033"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-03T14:13:51.514570" level="INFO">Opening browser 'chrome' to base url 'https://staging.cintaindonesiaclub.com/en/login'.</msg>
+<msg time="2025-02-12T14:43:33.177937" level="INFO">Opening browser 'chrome' to base url 'https://staging.cintaindonesiaclub.com/en/login'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-03T14:13:51.514570" elapsed="10.253153"/>
+<status status="PASS" start="2025-02-12T14:43:33.177937" elapsed="22.296967"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-03T14:14:01.767723" elapsed="0.039061"/>
+<status status="PASS" start="2025-02-12T14:43:55.475937" elapsed="0.063320"/>
 </kw>
-<status status="PASS" start="2025-02-03T14:13:51.514570" elapsed="10.292214"/>
+<status status="PASS" start="2025-02-12T14:43:33.176045" elapsed="22.363212"/>
 </kw>
 <kw name="Login With Invalid Username" owner="keywords">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${LOGIN_FIELD}</arg>
 <arg>${TIMEOUT}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-03T14:14:01.806784" elapsed="0.147378"/>
+<status status="PASS" start="2025-02-12T14:43:55.540255" elapsed="0.135299"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-03T14:14:01.955128" level="INFO">Typing text 'mualee070@gmail.com' into text field 'xpath=//input[@name='email']'.</msg>
+<msg time="2025-02-12T14:43:55.675554" level="INFO">Typing text 'mualee070@gmail.com' into text field 'xpath=//input[@name='email']'.</msg>
 <arg>${LOGIN_FIELD}</arg>
 <arg>${FilseUSERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-03T14:14:01.954162" elapsed="0.214064"/>
+<status status="PASS" start="2025-02-12T14:43:55.675554" elapsed="0.195198"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-03T14:14:02.168226" level="INFO">Typing text '@Aa111111' into text field 'xpath=//input[@name='password']'.</msg>
+<msg time="2025-02-12T14:43:55.871748" level="INFO">Typing text '@Aa111111' into text field 'xpath=//input[@name='password']'.</msg>
 <arg>${PASSWORD_FIELD}</arg>
 <arg>${TurePASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-03T14:14:02.168226" elapsed="0.137530"/>
+<status status="PASS" start="2025-02-12T14:43:55.870752" elapsed="0.130037"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-03T14:14:02.305756" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<msg time="2025-02-12T14:43:56.001787" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-03T14:14:02.305756" elapsed="0.116149"/>
+<status status="PASS" start="2025-02-12T14:43:56.001787" elapsed="0.108655"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${ERROR_MSG}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-03T14:14:02.421905" elapsed="0.445530"/>
+<status status="PASS" start="2025-02-12T14:43:56.110442" elapsed="0.444050"/>
 </kw>
-<status status="PASS" start="2025-02-03T14:14:01.806784" elapsed="1.060651"/>
+<status status="PASS" start="2025-02-12T14:43:55.540255" elapsed="1.014237"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2025-02-03T14:14:02.883088" level="INFO">Current page contains element 'xpath=//p[contains(text(),'Email or password is invalid. Please try again')]'.</msg>
+<msg time="2025-02-12T14:43:56.563839" level="INFO">Current page contains element 'xpath=//p[contains(text(),'Email or password is invalid. Please try again')]'.</msg>
 <arg>${ERROR_MSG}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2025-02-03T14:14:02.867435" elapsed="0.015653"/>
+<status status="PASS" start="2025-02-12T14:43:56.555491" elapsed="0.008348"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-03T14:14:02.883088" elapsed="2.247538"/>
+<status status="PASS" start="2025-02-12T14:43:56.564837" elapsed="2.196590"/>
 </kw>
-<status status="PASS" start="2025-02-03T14:13:51.514570" elapsed="13.616056"/>
+<status status="PASS" start="2025-02-12T14:43:33.175050" elapsed="25.587390"/>
 </test>
 <test id="s1-t2" name="User Can't Login Successfully pass" line="11">
 <kw name="Open Browser And Navigate" owner="keywords" type="SETUP">
 <kw name="Set Selenium Timeout" owner="SeleniumLibrary">
 <arg>${TIMEOUT}</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2025-02-03T14:14:05.134633" elapsed="0.000000"/>
+<status status="PASS" start="2025-02-12T14:43:58.768175" elapsed="0.000996"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-03T14:14:05.134633" level="INFO">Opening browser 'chrome' to base url 'https://staging.cintaindonesiaclub.com/en/login'.</msg>
+<msg time="2025-02-12T14:43:58.771882" level="INFO">Opening browser 'chrome' to base url 'https://staging.cintaindonesiaclub.com/en/login'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-03T14:14:05.134633" elapsed="5.398229"/>
+<status status="PASS" start="2025-02-12T14:43:58.770870" elapsed="52.370459"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2025-02-12T14:44:51.146319" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D50902F5+28725]
+	(No symbol) [0x00007FF6D4FF2AE0]
+	(No symbol) [0x00007FF6D4E8510A]
+	(No symbol) [0x00007FF6D4E5EEA5]
+	(No symbol) [0x00007FF6D4F06F87]
+	(No symbol) [0x00007FF6D4F1FA52]
+	(No symbol) [0x00007FF6D4EFFD53]
+	(No symbol) [0x00007FF6D4ECA0E3]
+	(No symbol) [0x00007FF6D4ECB471]
+	GetHandleVerifier [0x00007FF6D53BF30D+3366989]
+	GetHandleVerifier [0x00007FF6D53D12F0+3440688]
+	GetHandleVerifier [0x00007FF6D53C78FD+3401277]
+	GetHandleVerifier [0x00007FF6D515AAAB+858091]
+	(No symbol) [0x00007FF6D4FFE74F]
+	(No symbol) [0x00007FF6D4FFA304]
+	(No symbol) [0x00007FF6D4FFA49D]
+	(No symbol) [0x00007FF6D4FE8B69]
+	BaseThreadInitThunk [0x00007FFE6EC3259D+29]
+	RtlUserThreadStart [0x00007FFE706AAF38+40]
+</msg>
+<msg time="2025-02-12T14:44:51.150308" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D50902F5+28725]
+	(No symbol) [0x00007FF6D4FF2AE0]
+	(No symbol) [0x00007FF6D4E8510A]
+	(No symbol) [0x00007FF6D4E5EEA5]
+	(No symbol) [0x00007FF6D4F06F87]
+	(No symbol) [0x00007FF6D4F1FA52]
+	(No symbol) [0x00007FF6D4EFFD53]
+	(No symbol) [0x00007FF6D4ECA0E3]
+	(No symbol) [0x00007FF6D4ECB471]
+	GetHandleVerifier [0x00007FF6D53BF30D+3366989]
+	GetHandleVerifier [0x00007FF6D53D12F0+3440688]
+	GetHandleVerifier [0x00007FF6D53C78FD+3401277]
+	GetHandleVerifier [0x00007FF6D515AAAB+858091]
+	(No symbol) [0x00007FF6D4FFE74F]
+	(No symbol) [0x00007FF6D4FFA304]
+	(No symbol) [0x00007FF6D4FFA49D]
+	(No symbol) [0x00007FF6D4FE8B69]
+	BaseThreadInitThunk [0x00007FFE6EC3259D+29]
+	RtlUserThreadStart [0x00007FFE706AAF38+40]
+</msg>
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-03T14:14:10.533979" elapsed="0.038033"/>
+<status status="FAIL" start="2025-02-12T14:44:51.141329" elapsed="0.203810">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D50902F5+28725]
+	(No symbol) [0x00007FF6D4FF2AE0]
+	(No symbol) [0x00007FF6D4E8510A]
+	(No symbol) [0x00007FF6D4E5EEA5]
+	(No symbol) [0x00007FF6D4F06F87]
+	(No symbol) [0x00007FF6D4F1FA52]
+	(No symbol) [0x00007FF6D4EFFD53]
+	(No symbol) [0x00007FF6D4ECA0E3]
+	(No symbol) [0x00007FF6D4ECB471]
+	GetHandleVerifier [0x00007FF6D53BF30D+3366989]
+	GetHandleVerifier [0x00007FF6D53D12F0+3440688]
+	GetHandleVerifier [0x00007FF6D53C78FD+3401277]
+	GetHandleVerifier [0x00007FF6D515AAAB+858091]
+	(No symbol) [0x00007FF6D4FFE74F]
+	(No symbol) [0x00007FF6D4FFA304]
+	(No symbol) [0x00007FF6D4FFA49D]
+	(No symbol) [0x00007FF6D4FE8B69]
+	BaseThreadInitThunk [0x00007FFE6EC3259D+29]
+	RtlUserThreadStart [0x00007FFE706AAF38+40]
+</status>
 </kw>
-<status status="PASS" start="2025-02-03T14:14:05.134633" elapsed="5.437379"/>
-</kw>
-<kw name="Login With Invalid Password" owner="keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${LOGIN_FIELD}</arg>
-<arg>${TIMEOUT}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-03T14:14:10.573010" elapsed="0.041509"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-03T14:14:10.618045" level="INFO">Typing text 'mualee072@gmail.com' into text field 'xpath=//input[@name='email']'.</msg>
-<arg>${LOGIN_FIELD}</arg>
-<arg>${TureUSERNAME}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-03T14:14:10.615515" elapsed="0.205712"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-03T14:14:10.821227" level="INFO">Typing text '@Aa1111100' into text field 'xpath=//input[@name='password']'.</msg>
-<arg>${PASSWORD_FIELD}</arg>
-<arg>${FilsePASSWORD}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-03T14:14:10.821227" elapsed="0.130277"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-03T14:14:10.951504" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
-<arg>${LOGIN_BUTTON}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-03T14:14:10.951504" elapsed="0.099670"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${ERROR_MSG}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-03T14:14:11.051174" elapsed="0.668013"/>
-</kw>
-<status status="PASS" start="2025-02-03T14:14:10.573010" elapsed="1.146177"/>
-</kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2025-02-03T14:14:11.735328" level="INFO">Current page contains element 'xpath=//p[contains(text(),'Email or password is invalid. Please try again')]'.</msg>
-<arg>${ERROR_MSG}</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2025-02-03T14:14:11.719187" elapsed="0.016141"/>
+<status status="FAIL" start="2025-02-12T14:43:58.767164" elapsed="52.577975">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D50902F5+28725]
+	(No symbol) [0x00007FF6D4FF2AE0]
+	(No symbol) [0x00007FF6D4E8510A]
+	(No symbol) [0x00007FF6D4E5EEA5]
+	(No symbol) [0x00007FF6D4F06F87]
+	(No symbol) [0x00007FF6D4F1FA52]
+	(No symbol) [0x00007FF6D4EFFD53]
+	(No symbol) [0x00007FF6D4ECA0E3]
+	(No symbol) [0x00007FF6D4ECB471]
+	GetHandleVerifier [0x00007FF6D53BF30D+3366989]
+	GetHandleVerifier [0x00007FF6D53D12F0+3440688]
+	GetHandleVerifier [0x00007FF6D53C78FD+3401277]
+	GetHandleVerifier [0x00007FF6D515AAAB+858091]
+	(No symbol) [0x00007FF6D4FFE74F]
+	(No symbol) [0x00007FF6D4FFA304]
+	(No symbol) [0x00007FF6D4FFA49D]
+	(No symbol) [0x00007FF6D4FE8B69]
+	BaseThreadInitThunk [0x00007FFE6EC3259D+29]
+	RtlUserThreadStart [0x00007FFE706AAF38+40]
+</status>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-03T14:14:11.735328" elapsed="2.165890"/>
+<status status="PASS" start="2025-02-12T14:44:51.346141" elapsed="2.083171"/>
 </kw>
-<status status="PASS" start="2025-02-03T14:14:05.134633" elapsed="8.766585"/>
+<status status="FAIL" start="2025-02-12T14:43:58.766007" elapsed="54.663305">Setup failed:
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D50902F5+28725]
+	(No symbol) [0x00007FF6D4FF2AE0]
+	(No symbol) [0x00007FF6D4E8510A]
+	(No symbol) [0x00007FF6D4E5EEA5]
+	(No symbol) [0x00007FF6D4F06F87]
+	(No symbol) [0x00007FF6D4F1FA52]
+	(No symbol) [0x00007FF6D4EFFD53]
+	(No symbol) [0x00007FF6D4ECA0E3]
+	(No symbol) [0x00007FF6D4ECB471]
+	GetHandleVerifier [0x00007FF6D53BF30D+3366989]
+	GetHandleVerifier [0x00007FF6D53D12F0+3440688]
+	GetHandleVerifier [0x00007FF6D53C78FD+3401277]
+	GetHandleVerifier [0x00007FF6D515AAAB+858091]
+	(No symbol) [0x00007FF6D4FFE74F]
+	(No symbol) [0x00007FF6D4FFA304]
+	(No symbol) [0x00007FF6D4FFA49D]
+	(No symbol) [0x00007FF6D4FE8B69]
+	BaseThreadInitThunk [0x00007FFE6EC3259D+29]
+	RtlUserThreadStart [0x00007FFE706AAF38+40]
+</status>
 </test>
 <test id="s1-t3" name="User Can Login Successfully" line="15">
 <kw name="Open Browser And Navigate" owner="keywords" type="SETUP">
 <kw name="Set Selenium Timeout" owner="SeleniumLibrary">
 <arg>${TIMEOUT}</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2025-02-03T14:14:13.901218" elapsed="0.000000"/>
+<status status="PASS" start="2025-02-12T14:44:53.440814" elapsed="0.001031"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-03T14:14:13.901218" level="INFO">Opening browser 'chrome' to base url 'https://staging.cintaindonesiaclub.com/en/login'.</msg>
+<msg time="2025-02-12T14:44:53.442842" level="INFO">Opening browser 'chrome' to base url 'https://staging.cintaindonesiaclub.com/en/login'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-03T14:14:13.901218" elapsed="5.199054"/>
+<status status="PASS" start="2025-02-12T14:44:53.441845" elapsed="25.204439"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-03T14:14:19.100272" elapsed="0.046156"/>
+<status status="PASS" start="2025-02-12T14:45:18.646284" elapsed="0.035310"/>
 </kw>
-<status status="PASS" start="2025-02-03T14:14:13.901218" elapsed="5.245210"/>
+<status status="PASS" start="2025-02-12T14:44:53.440814" elapsed="25.240780"/>
 </kw>
 <kw name="Login With Valid Credentials" owner="keywords">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${LOGIN_FIELD}</arg>
 <arg>${TIMEOUT}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-03T14:14:19.147451" elapsed="0.043893"/>
+<status status="PASS" start="2025-02-12T14:45:18.682595" elapsed="0.037077"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-03T14:14:19.192340" level="INFO">Typing text 'mualee072@gmail.com' into text field 'xpath=//input[@name='email']'.</msg>
+<msg time="2025-02-12T14:45:18.720668" level="INFO">Typing text 'mualee072@gmail.com' into text field 'xpath=//input[@name='email']'.</msg>
 <arg>${LOGIN_FIELD}</arg>
 <arg>${TureUSERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-03T14:14:19.191344" elapsed="0.190994"/>
+<status status="PASS" start="2025-02-12T14:45:18.719672" elapsed="0.192435"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-03T14:14:19.382338" level="INFO">Typing text '@Aa111111' into text field 'xpath=//input[@name='password']'.</msg>
+<msg time="2025-02-12T14:45:18.912107" level="INFO">Typing text '@Aa111111' into text field 'xpath=//input[@name='password']'.</msg>
 <arg>${PASSWORD_FIELD}</arg>
 <arg>${TurePASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-03T14:14:19.382338" elapsed="0.135532"/>
+<status status="PASS" start="2025-02-12T14:45:18.912107" elapsed="0.142825"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-03T14:14:19.517870" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<msg time="2025-02-12T14:45:19.054932" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-03T14:14:19.517870" elapsed="0.099595"/>
+<status status="PASS" start="2025-02-12T14:45:19.054932" elapsed="0.119522"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${NAV_LINK}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-03T14:14:19.617465" elapsed="1.586409"/>
+<status status="PASS" start="2025-02-12T14:45:19.174454" elapsed="3.620922"/>
 </kw>
-<status status="PASS" start="2025-02-03T14:14:19.146428" elapsed="2.057446"/>
+<status status="PASS" start="2025-02-12T14:45:18.682595" elapsed="4.112781"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2025-02-03T14:14:21.219501" level="INFO">Current page contains element 'xpath=//a[@href='/en']'.</msg>
+<msg time="2025-02-12T14:45:22.808602" level="INFO">Current page contains element 'xpath=//a[@href='/en']'.</msg>
 <arg>${NAV_LINK}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2025-02-03T14:14:21.203874" elapsed="0.015627"/>
+<status status="PASS" start="2025-02-12T14:45:22.795376" elapsed="0.013226"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-03T14:14:21.219501" elapsed="2.181013"/>
+<status status="PASS" start="2025-02-12T14:45:22.809615" elapsed="2.244282"/>
 </kw>
-<status status="PASS" start="2025-02-03T14:14:13.901218" elapsed="9.499296"/>
+<status status="PASS" start="2025-02-12T14:44:53.439860" elapsed="31.615043"/>
 </test>
-<status status="PASS" start="2025-02-03T14:13:51.193706" elapsed="32.206808"/>
+<status status="FAIL" start="2025-02-12T14:43:32.748634" elapsed="112.308174"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Robot Suite" id="s1" pass="3" fail="0" skip="0">Robot Suite</stat>
+<stat name="Robot Suite" id="s1" pass="2" fail="1" skip="0">Robot Suite</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2025-02-12T14:44:51.146319" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D50902F5+28725]
+	(No symbol) [0x00007FF6D4FF2AE0]
+	(No symbol) [0x00007FF6D4E8510A]
+	(No symbol) [0x00007FF6D4E5EEA5]
+	(No symbol) [0x00007FF6D4F06F87]
+	(No symbol) [0x00007FF6D4F1FA52]
+	(No symbol) [0x00007FF6D4EFFD53]
+	(No symbol) [0x00007FF6D4ECA0E3]
+	(No symbol) [0x00007FF6D4ECB471]
+	GetHandleVerifier [0x00007FF6D53BF30D+3366989]
+	GetHandleVerifier [0x00007FF6D53D12F0+3440688]
+	GetHandleVerifier [0x00007FF6D53C78FD+3401277]
+	GetHandleVerifier [0x00007FF6D515AAAB+858091]
+	(No symbol) [0x00007FF6D4FFE74F]
+	(No symbol) [0x00007FF6D4FFA304]
+	(No symbol) [0x00007FF6D4FFA49D]
+	(No symbol) [0x00007FF6D4FE8B69]
+	BaseThreadInitThunk [0x00007FFE6EC3259D+29]
+	RtlUserThreadStart [0x00007FFE706AAF38+40]
+</msg>
 </errors>
 </robot>
